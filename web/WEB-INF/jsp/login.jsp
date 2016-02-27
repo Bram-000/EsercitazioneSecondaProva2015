@@ -34,9 +34,9 @@
                     <label for="icon_prefix">Nome Utente</label>
                 </div>
                 <div class="input-field col s6">
-                    <i class="material-icons prefix">phone</i>
-                    <input id="icon_vpn_key" type="Pass" class="validate">
-                    <label for="icon_telephone">Password</label>
+                    <i class="material-icons prefix">vpn_key</i>
+                    <input id="icon_icon_prefix" type="password" class="validate">
+                    <label for="icon_icon_prefix">Password</label>
                 </div>
             </div>
         </form>
