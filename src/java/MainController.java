@@ -16,15 +16,13 @@ public class MainController {
         
     }
     
-    
-    
     @RequestMapping(value="/", method= RequestMethod.GET)
     public String index(ModelMap map){
         return "index";
     }
     
     @RequestMapping(value="/login",method= RequestMethod.GET)
-    public String jora(ModelMap map){
+    public String login(ModelMap map){
         return "login";
     }
 }
