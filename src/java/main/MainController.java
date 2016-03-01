@@ -20,7 +20,7 @@ public class MainController {
     
     @RequestMapping(value="/", method= RequestMethod.GET)
     public String index(ModelMap map){
-        return "index";
+        return "paginaIniziale";
     }
     
     @RequestMapping(value="/login",method= RequestMethod.GET)

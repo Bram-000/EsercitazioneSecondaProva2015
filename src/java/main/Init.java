@@ -7,13 +7,12 @@ package main;
  */
 
 
-import javax.servlet.ServletContext;  
-import javax.servlet.ServletException;  
-import javax.servlet.ServletRegistration.Dynamic;  
-  
-import org.springframework.web.WebApplicationInitializer;  
-import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;  
-import org.springframework.web.servlet.DispatcherServlet;  
+import javax.servlet.ServletRegistration.Dynamic;
+import javax.servlet.ServletContext;
+import javax.servlet.ServletException;
+import org.springframework.web.WebApplicationInitializer;
+import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
+import org.springframework.web.servlet.DispatcherServlet;
 
 /**
  *
@@ -23,11 +22,15 @@ public class Init implements WebApplicationInitializer{
 
     @Override
     public void onStartup(ServletContext sc) throws ServletException {
-        AnnotationConfigWebApplicationContext ctx= new AnnotationConfigWebApplicationContext();
-        ctx.register(Config.class );
-        ctx.setServletContext(sc);
-        Dynamic servlet = sc.addServlet("dispatcher", new DispatcherServlet(ctx));
-        servlet.addMapping("/");
-        servlet.setLoadOnStartup(1);
+        
+        AnnotationConfigWebApplicationContext cx = new AnnotationConfigWebApplicationContext();
+        cx.register(Config.class);
+        cx.setServletContext(sc);
+        
+        Dynamic server = sc.addServlet("dispatcher", new DispatcherServlet(cx));
+        server.addMapping("/");
+        server.setLoadOnStartup(1);
+        
     }
+    
 }
