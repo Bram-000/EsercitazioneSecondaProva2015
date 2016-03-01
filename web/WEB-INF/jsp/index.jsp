@@ -5,7 +5,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <!--<link rel="stylesheet" href="materialize/css/materialize.min.css">-->
+        <link rel="stylesheet" href="css/stylecss">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
@@ -14,20 +14,19 @@
 
     <body>
         <div class="container">
-            <nav>
-              <div class="nav-wrapper blue">
-                <a href="#" class="brand-logo">Home</a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                  <li><a href="login.jsp">Login</a></li>
-                  <li><a href="#">Sign Up</a></li>
-                  <!--<li><a href="collapsible.html">JavaScript</a></li>-->
-                </ul>
-              </div>
-            </nav>
-            
             <div class="row">
-                <!--<div class="col l3 vuoto">.</div>-->
-                <button class="btn blue center-align col l6 s12">Visualizza tutti gli Eventi</button>
+                <nav>
+                  <div class="nav-wrapper blue">
+                    <a href="#" class="brand-logo">Home</a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                      <li><a href="login.jsp">Login</a></li>
+                      <li><a href="#">Sign Up</a></li>
+                    </ul>
+                  </div>
+                </nav>
+            </div>
+            <div class="row">
+                <p class="homeEventi">Tutti gli eventi...</p>
             </div>
         </div>
         
