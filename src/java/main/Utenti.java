@@ -1,7 +1,6 @@
-package main;
-
 
 import java.io.Serializable;
+import java.util.Set;
 import javax.persistence.*;
 
 
@@ -31,6 +30,22 @@ public class Utenti implements Serializable {
     
     @Column(name="E-mail",length=30)
     private String email;
+
+    @OneToMany(mappedBy="utente")
+    private Set<Eventi> eventi;
+    
+    @OneToMany(mappedBy="utente")
+    private Set<Commenti> commenti;
+    
+    @ManyToMany
+    @JoinTable(
+        name="Ut_Cat",
+        joinColumns={@JoinColumn(name="nickname")},
+        inverseJoinColumns={@JoinColumn(name="idCat")}
+    )
+
+    private Set<Categorie> categorie;
+
 
     public Utenti() {
     }

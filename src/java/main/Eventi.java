@@ -1,7 +1,6 @@
-package main;
-
 
 import java.io.Serializable;
+import java.util.Set;
 import javax.persistence.*;
 
 
@@ -27,6 +26,16 @@ public class Eventi implements Serializable {
    
     @Column(name="Data")
     private String data;
+    
+    @ManyToOne
+    @JoinColumn(name="Nickname")
+    private Utenti utente;
+    
+ 
+    @OneToMany(mappedBy="utente")
+    private Set<Commenti> commenti;  
+    
+    
 
     public Eventi() {
     }

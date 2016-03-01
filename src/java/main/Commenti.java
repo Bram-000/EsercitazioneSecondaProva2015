@@ -1,7 +1,6 @@
-package main;
-
 
 import java.io.Serializable;
+import java.util.Set;
 import javax.persistence.*;
 
 
@@ -27,6 +26,19 @@ public class Commenti implements Serializable {
    
     @Column(name="Voto",length=1)
     private int Voto;
+    
+    
+    @ManyToOne
+    @JoinColumn(name="Nickname")
+    private Utenti utente;
+    
+     
+    @ManyToOne
+    @JoinColumn(name="id_Evento")
+    private Eventi evento;
+  
+    @ManyToMany(mappedBy="commenti")
+     private Set<Artisti> artisti;
 
     public Commenti() {
     }

@@ -1,5 +1,3 @@
-package main;
-
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,13 +16,15 @@ public class MainController {
         
     }
     
+    
+    
     @RequestMapping(value="/", method= RequestMethod.GET)
     public String index(ModelMap map){
-        return "paginaIniziale";
+        return "index";
     }
     
     @RequestMapping(value="/login",method= RequestMethod.GET)
-    public String login(ModelMap map){
+    public String jora(ModelMap map){
         return "login";
     }
 }

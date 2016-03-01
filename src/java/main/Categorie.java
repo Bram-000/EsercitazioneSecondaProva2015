@@ -1,7 +1,6 @@
-package main;
-
 
 import java.io.Serializable;
+import java.util.Set;
 import javax.persistence.*;
 
 
@@ -24,6 +23,12 @@ public class Categorie implements Serializable {
     
     @Column(name="Descrizione",length=20)
     private String descrizione;
+    
+    
+     @ManyToMany(mappedBy="categorie")
+     private Set<Eventi> eventi;
+     
+             
 
     public Categorie() {
     }

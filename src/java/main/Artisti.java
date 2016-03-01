@@ -1,7 +1,6 @@
-package main;
-
 
 import java.io.Serializable;
+import java.util.Set;
 import javax.persistence.*;
 
 
@@ -24,6 +23,16 @@ public class Artisti implements Serializable {
     
     @Column(name="nomeArte",length=25)
     private String nomeArte;
+    
+    
+    @ManyToMany
+    @JoinTable(
+        name="Art_Eventi",
+        joinColumns={@JoinColumn(name="id_Art")},
+        inverseJoinColumns={@JoinColumn(name="id_Comm")}
+    )
+
+     private Set<Commenti> commenti;
 
     public Artisti() {
     }
