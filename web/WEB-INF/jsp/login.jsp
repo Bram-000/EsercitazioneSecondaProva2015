@@ -9,9 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" href="./resources/css/style.css">
-        <link rel="stylesheet" href="./resources/materialize/css/materialize.min.css">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
         <title>LOGIN</title>
     </head>
     <body>
@@ -45,7 +43,7 @@
         </div>
         
         </div>
-         <script src=".resources/materialize/js/materialize.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
          <!--<script src="materialize/js/materialize.min.js"></script>-->
     </body>
 </html>
