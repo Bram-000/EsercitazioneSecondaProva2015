@@ -4,7 +4,7 @@
   <session-factory>
     <property name="hibernate.dialect">org.hibernate.dialect.DerbyDialect</property>
     <property name="hibernate.connection.driver_class">org.apache.derby.jdbc.ClientDriver</property>
-    <property name="hibernate.connection.url">jdbc:mysql://10.0.1.252:3306/5ib15</property>
+    <property name="hibernate.connection.url">jdbc:mysql://10.0.1.252:3306/5ib15?zeroDateTimeBehavior=convertToNull [5ib15 on Default schema]</property>
     <property name="hibernate.connection.username">app</property>
     <property name="hibernate.connection.password">app</property>
   </session-factory>
