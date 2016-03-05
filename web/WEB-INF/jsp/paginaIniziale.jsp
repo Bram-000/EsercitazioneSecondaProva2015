@@ -32,6 +32,7 @@
         
         
          <script src=".resources/materialize/js/materialize.min.js"></script>
+         <script src=".resources/js/jquery.js"></script>
          <!--<script src="materialize/js/materialize.min.js"></script>-->
          
     </body>
