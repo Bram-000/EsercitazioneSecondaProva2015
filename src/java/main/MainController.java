@@ -1,4 +1,3 @@
-
 import java.util.ArrayList;
 import java.util.List;
 import org.springframework.stereotype.Controller;
@@ -15,8 +14,6 @@ public class MainController {
     public MainController() {
         
     }
-    
-    
     
     @RequestMapping(value="/", method= RequestMethod.GET)
     public String index(ModelMap map){
