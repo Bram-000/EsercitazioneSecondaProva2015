@@ -14,11 +14,15 @@ public class MainController {
 
     public MainController() {
         eventi.add(new Eventi("padova","2010-10-10"));
+        eventi.add(new Eventi("roma","2010-10-10"));
+        eventi.add(new Eventi("milano","2010-10-10"));
+        eventi.add(new Eventi("venezia","2010-10-10"));
+        eventi.add(new Eventi("verona","2010-10-10"));
     }
     
     @RequestMapping(value="/", method= RequestMethod.GET)
     public String index(ModelMap map){
-        map.put("primo",eventi);
+        map.put("eventi",eventi);
         return "paginaIniziale";
     }
     
