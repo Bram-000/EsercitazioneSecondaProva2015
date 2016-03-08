@@ -18,6 +18,16 @@ public class MainController {
         eventi.add(new Eventi("milano","2010-10-10"));
         eventi.add(new Eventi("venezia","2010-10-10"));
         eventi.add(new Eventi("verona","2010-10-10"));
+        eventi.add(new Eventi("padova","2010-10-10"));
+        eventi.add(new Eventi("roma","2010-10-10"));
+        eventi.add(new Eventi("milano","2010-10-10"));
+        eventi.add(new Eventi("venezia","2010-10-10"));
+        eventi.add(new Eventi("verona","2010-10-10"));
+        eventi.add(new Eventi("padova","2010-10-10"));
+        eventi.add(new Eventi("roma","2010-10-10"));
+        eventi.add(new Eventi("milano","2010-10-10"));
+        eventi.add(new Eventi("venezia","2010-10-10"));
+        eventi.add(new Eventi("verona","2010-10-10"));
     }
     
     @RequestMapping(value="/", method= RequestMethod.GET)
@@ -27,7 +37,12 @@ public class MainController {
     }
     
     @RequestMapping(value="/login",method= RequestMethod.GET)
-    public String jora(ModelMap map){
+    public String login(ModelMap map){
         return "login";
+    }
+    
+    @RequestMapping(value="/profilo",method= RequestMethod.GET)
+    public String profilo(ModelMap map){
+        return "profiloUtente";
     }
 }
