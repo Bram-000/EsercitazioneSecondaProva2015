@@ -37,8 +37,7 @@ public class Commenti implements Serializable {
     @JoinColumn(name="id_Evento")
     private Eventi evento;
   
-    @ManyToMany(mappedBy="commenti")
-     private Set<Artisti> artisti;
+    
 
     public Commenti() {
     }

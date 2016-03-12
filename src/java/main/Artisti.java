@@ -29,10 +29,10 @@ public class Artisti implements Serializable {
     @JoinTable(
         name="Art_Eventi",
         joinColumns={@JoinColumn(name="id_Art")},
-        inverseJoinColumns={@JoinColumn(name="id_Comm")}
+        inverseJoinColumns={@JoinColumn(name="id_Evento")}
     )
 
-     private Set<Commenti> commenti;
+     private Set<Eventi> eventi;
 
     public Artisti() {
     }
