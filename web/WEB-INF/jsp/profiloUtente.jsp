@@ -32,8 +32,7 @@
             
             
             
-            <button class="btn center-align">Add Evento</button>
-            <button class="btn center-align">Add Commento</button>
+            <button class="btn center-align">Aggiungi Evento</button>
             
             
             
