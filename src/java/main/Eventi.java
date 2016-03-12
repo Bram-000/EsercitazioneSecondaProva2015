@@ -33,7 +33,10 @@ public class Eventi implements Serializable {
     
  
     @OneToMany(mappedBy="utente")
-    private Set<Commenti> commenti;  
+    private Set<Commenti> commenti;
+    
+    @ManyToMany(mappedBy="eventi")
+     private Set<Artisti> artisti;
     
     
 
