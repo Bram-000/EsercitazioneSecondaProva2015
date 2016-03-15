@@ -3,7 +3,8 @@
 }
 
 body{
-    background-image: url("https://www.techzilla.it/wp-content/uploads/2015/05/Sfondi-TZ-Sky-2.png");
+    background-image: url("http://www.americanspiritcentre.com/wp-content/uploads/2015/06/concert.jpeg");
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover;
 }

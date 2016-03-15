@@ -21,7 +21,7 @@ public class MainController {
         eventi.add(new Eventi("verona","2010-10-10"));
         eventi.add(new Eventi("padova","2010-10-10"));
         commenti.add(new Commenti("Bell'evento",5));
-        commenti.add(new Commenti("Bell'evento",5));
+        commenti.add(new Commenti("Schifo di Evento",1));
     }
     
     @RequestMapping(value="/", method= RequestMethod.GET)
