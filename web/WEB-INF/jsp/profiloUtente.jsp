@@ -1,4 +1,4 @@
-<%-- 
+<%--
     Document   : profiloUtente
     Created on : 8-mar-2016, 9.44.06
     Author     : FSEVERI\scagnellato3082
@@ -12,33 +12,29 @@
         <link rel="stylesheet" href="./resources/css/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <title>Home Page</title>
+        <title>Profilo</title>
     </head>
 
     <body>
-        <div class="container">
-            <div class="row">
-                <nav>
-                    <div class="nav-wrapper blue">
-                        <a href="#" class="brand-logo">Home</a>
-                        <ul id="nav-mobile" class="right hide-on-med-and-down">
-                            <li><a href="./login">Login</a></li>
-                            <li><a href="#">Sign Up</a></li>
-                            <li><a href="profilo/">Profilo (tmp)</a></li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-            
-            
-            
-            <button class="btn center-align">Aggiungi Evento</button>
-            
-            
-            
+
+        <div class="row">
+            <nav>
+                <div class="nav-wrapper">
+                    <a class="brand-logo">Profilo</a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Sign Up</a></li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-        <div class="parallax-container">
-            <div class="parallax"><img src="https://www.techzilla.it/wp-content/uploads/2015/05/Sfondi-TZ-Sky-2.png"></div>
+        <div class="container">
+
+
+        <button class="btn center-align">Aggiungi Evento</button>
+
+
+
         </div>
 
     </p>
